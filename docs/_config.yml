@@ -1,0 +1,12 @@
+# Site settings
+title: @naxmefy/blueprint
+email: m.neundorf@live.de
+description: >
+  Tool to generate source code.
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: "http://www.nax.me/node-blueprint/" # the base hostname & protocol for your site
+twitter_username: naxmefy
+github_username:  naxmefy
+
+# Build settings
+markdown: kramdown
