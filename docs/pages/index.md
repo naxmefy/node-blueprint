@@ -10,12 +10,12 @@ weight: 10
 # @naxmefy/blueprint
 
 ## Installation
-```
+```Shell
 $ npm install --global @naxmefy/blueprint
 ```
 
 ## Usage
-```
+```Shell
 // this loads blueprint.yml per default
 $ blueprint user/repo
 
