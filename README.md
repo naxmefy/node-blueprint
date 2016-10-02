@@ -15,6 +15,6 @@ $ npm install --global @naxmefy/blueprint
 
 ## Documentation
 
-* [CLI Usage](/docs/CLI-Usage)
-* [Lib Usage](/docs/Lib-Usage)
-* [Create a Blueprint](/docs/Create-a-Blueprint)
+* [CLI Usage](/docs/CLI-Usage.md)
+* [Lib Usage](/docs/Lib-Usage.md)
+* [Create a Blueprint](/docs/Create-a-Blueprint.md)

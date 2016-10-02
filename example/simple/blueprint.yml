@@ -1,0 +1,49 @@
+# This example template setup a simple nodejs project
+blueprint: # here we can define blueprint config
+modules:
+  path: path
+variables: # here we can define varliables with default values
+
+# List Templates
+npmrc: &npmrc |
+save=true
+tag-version-prefix=
+
+editorconfig: &editorconfig |
+root = true
+
+[*]
+indent_style = space
+indent_size = 2
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+mocha: &mocha |
+--recursive
+--colors
+--require should
+
+# Example with variables
+readme: &readme |
+# {{ path.basename(cwd) }}
+
+templates:
+  - name: .npmrc
+    template: *npmrc
+
+  - name: .gitignore
+    url: https://raw.githubusercontent.com/github/gitignore/master/Node.gitignore
+
+  - name: .editorconfig
+    template: *editorconfig
+
+  - name: README.md
+    template: *readme
+
+  - name: mocha.opts
+    template: *mocha
+    target: test # test folder relative from process cwd
+
+
