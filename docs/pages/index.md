@@ -8,3 +8,8 @@ weight: 10
 ---
 
 # @naxmefy/blueprint
+
+## Installation
+```
+$ npm install --global @naxmefy/blueprint
+```
